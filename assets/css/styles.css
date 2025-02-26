@@ -1,0 +1,134 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 15px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #ff6347;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e53e29;
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+    }
+}
