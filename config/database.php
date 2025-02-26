@@ -1,7 +1,7 @@
 <?php
-$host = "your-rds-endpoint";  // Change this if using AWS RDS
+$host = "localhost";  // Change this if using AWS RDS
 $username = "admin";
-$password = "yourpassword";
+$password = "Akshay@123";
 $database = "shop_inventory";
 
 $conn = new mysqli($host, $username, $password, $database);
